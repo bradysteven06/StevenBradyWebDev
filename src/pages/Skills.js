@@ -2,7 +2,7 @@ import React from 'react';
 
 const Skills = () => {
   return (
-    <section id="skills">
+    <div>
       <h2>Skills</h2>
       <ul>
         <li>JavaScript</li>
@@ -11,7 +11,7 @@ const Skills = () => {
         <li>Node.js</li>
         <li>Python</li>
       </ul>
-    </section>
+    </div>
   );
 };
 
