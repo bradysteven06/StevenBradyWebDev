@@ -3,17 +3,16 @@ import React from 'react';
 const Contact = () => {
   return (
     <div>
-      <h2>Projects</h2>
-      <div>
-        <h3>Project 1</h3>
-        <p>Description of Project 1...</p>
-        <a href="https://github.com/your-username/project1">GitHub Repo</a>
-      </div>
-      <div>
-        <h3>Project 2</h3>
-        <p>Description of Project 2...</p>
-        <a href="https://github.com/your-username/project2">GitHub Repo</a>
-      </div>
+      <h2>Contact</h2>
+      <form>
+        <label>Name:</label>
+        <input type="text" name="name" />
+        <label>Email:</label>
+        <input type="email" name="email" />
+        <label>Message:</label>
+        <textarea name="message"></textarea>
+        <button type="submit">Send</button>
+      </form>
     </div>
   );
 };
