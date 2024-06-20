@@ -1,19 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Navbar, Nav } from 'react-bootstrap';
 
 const Header = () => {
   return (
-    <header>
-      <h1>My Portfolio</h1>
-      <nav>
-        <ul>
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/skills">Skills</Link></li>
-          <li><Link to="/projects">Projects</Link></li>
-          <li><Link to="/contact">Contact</Link></li>
-        </ul>
-      </nav>
-    </header>
+    <Navbar bg="dark" variant="dark" expand="lg">
+      <Navbar.Brand href="#">My Portfolio</Navbar.Brand>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className="ml-auto">
+          <Nav.Link as={Link} to="/about">About</Nav.Link>
+          <Nav.Link as={Link} to="/skills">Skills</Nav.Link>
+          <Nav.Link as={Link} to="/projects">Projects</Nav.Link>
+          <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
   );
 };
 

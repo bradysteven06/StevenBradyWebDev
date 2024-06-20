@@ -1,20 +1,33 @@
 import React from 'react';
+import { Container, Card, Button } from 'react-bootstrap';
 
 const Projects = () => {
   return (
-    <div>
+    <Container className="my-5">
       <h2>Projects</h2>
-      <div>
-        <h3>Project 1</h3>
-        <p>Description of Project 1...</p>
-        <a href="https://github.com/your-username/project1">GitHub Repo</a>
+      <div className="d-flex flex-wrap">
+        <Card className="m-2" style={{ width: '18rem' }}>
+          <Card.Img variant="top" src="path/to/your/image.jpg" />
+          <Card.Body>
+            <Card.Title>Project 1</Card.Title>
+            <Card.Text>
+              Description of Project 1...
+            </Card.Text>
+            <Button variant="primary" href="https://github.com/your-username/project1">GitHub Repo</Button>
+          </Card.Body>
+        </Card>
+        <Card className="m-2" style={{ width: '18rem' }}>
+          <Card.Img variant="top" src="path/to/your/image.jpg" />
+          <Card.Body>
+            <Card.Title>Project 2</Card.Title>
+            <Card.Text>
+              Description of Project 2...
+            </Card.Text>
+            <Button variant="primary" href="https://github.com/your-username/project2">GitHub Repo</Button>
+          </Card.Body>
+        </Card>
       </div>
-      <div>
-        <h3>Project 2</h3>
-        <p>Description of Project 2...</p>
-        <a href="https://github.com/your-username/project2">GitHub Repo</a>
-      </div>
-    </div>
+    </Container>
   );
 };
 
