@@ -1,0 +1,27 @@
+.custom-navbar {
+    display: flex;
+    align-items: center;
+  }
+  
+  .custom-navbar .brand {
+    flex-grow: .46;
+  }
+  
+  .custom-navbar .navbar-collapse {
+    flex-grow: 0;
+    justify-content: center;
+  }
+  
+  .custom-navbar .navbar-toggler {
+    order: 3;
+  }
+  
+  .custom-navbar .navbar-nav {
+    flex-direction: row;
+  }
+  
+  .custom-navbar .nav-link {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  
